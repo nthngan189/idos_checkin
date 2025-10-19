@@ -1,0 +1,1 @@
+ <tên_profile>|<email>|<mật_khẩu_email (tùy chọn 1)>|<proxy (tuỳ chọn)>
