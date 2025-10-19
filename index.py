@@ -63,6 +63,7 @@ class Auto:
             return False
     def _run(self):
         self.node.go_to(f'{PROJECT_URL}', method="get")
+        Utility.wait_time(5)
         self.node.find_and_click(By.XPATH, '//a[contains(@class,"cursor-pointer")]')
         if self.login():
             checkin = self.check_in()

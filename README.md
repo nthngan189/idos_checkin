@@ -1,4 +1,4 @@
-# AUTOMATION CHECKIN DESPEED với Selenium Python
+# AUTOMATION CHECKIN IdOS với Selenium Python
 
 ## ⚠ Lưu ý quan trọng
 
@@ -18,15 +18,14 @@ Trong trường hợp quá trình tải tự động thất bại, tool sẽ m�
 
 ## 📖 Mục lục
 1. [Giới thiệu](#-giới-thiệu)
-2. [Video demo](#-video-demo)
-3. [Chức năng chính](#-chức-năng-chính)
-4. [Yêu cầu ban đầu](#-yêu-cầu-ban-đầu)
-5. [Cấu trúc file](#-cấu-trúc-file)
-6. [Hướng dẫn cài đặt](#-hướng-dẫn-cài-đặt)
-7. [Hướng dẫn sử dụng](#-hướng-dẫn-sử-dụng)
-8. [Tùy chỉnh cấu hình](#-tùy-chỉnh-cấu-hình)
-9. [Tips](#-tips)
-10. [Thông tin liên hệ](#-thông-tin-liên-hệ)
+2. [Chức năng chính](#-chức-năng-chính)
+3. [Yêu cầu ban đầu](#-yêu-cầu-ban-đầu)
+4. [Cấu trúc file](#-cấu-trúc-file)
+5. [Hướng dẫn cài đặt](#-hướng-dẫn-cài-đặt)
+6. [Hướng dẫn sử dụng](#-hướng-dẫn-sử-dụng)
+7. [Tùy chỉnh cấu hình](#-tùy-chỉnh-cấu-hình)
+8. [Tips](#-tips)
+9. [Thông tin liên hệ](#-thông-tin-liên-hệ)
 
 ## 🔔 Bật thông báo để theo dõi mã nguồn khi có update
 
@@ -38,20 +37,10 @@ Trong trường hợp quá trình tải tự động thất bại, tool sẽ m�
 
 ## 🌐 Giới thiệu
 
-📌 **Trang dự án**: [www.app.despeed.net](https://app.despeed.net/register?ref=bhnKxAhzUxmB)
+📌 **Trang dự án**: [idos.network](https://app.idos.network?ref=3F2D39B9)
 
 <p align="center">
     <img src="intro.jpg" alt="Giới thiệu">
-</p>
-
----
-
-## 🎬 Video demo
-
-<p align="center">
-    <a href="https://youtu.be/O373WrbVeYo">
-        <img src="https://img.youtube.com/vi/O373WrbVeYo/maxresdefault.jpg" alt="Xem video demo">
-    </a>
 </p>
 
 ---
@@ -75,7 +64,6 @@ Trong trường hợp quá trình tải tự động thất bại, tool sẽ m�
 | -------------------------------- | ------------------------------------------ |
 | `browser_automation.py`          | Code tự động hóa trình duyệt.              |
 | `utils.py`                       | Các hàm hỗ trợ chung.                      |
-| `googl.py`                       | Xử lý các thao tác liên quan đến Google.   |
 | `index.py`                       | File khởi chạy chương trình chính.         |
 | `config_example.txt`             | File cấu hình mẫu cho tool.                |
 | `requirements.txt`               | Danh sách các thư viện cần thiết.          |
