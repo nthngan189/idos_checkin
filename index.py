@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from browser_automation import BrowserManager, Node
 from utils import Utility
 
-PROJECT_URL = "https://app.idos.network/points"
+PROJECT_URL = "https://app.idos.network/idos-profile"
 
 class Setup:
     def __init__(self, node: Node, profile) -> None:
@@ -52,7 +52,9 @@ class Auto:
         task["quest"] = len(self.node.find_all(By.XPATH, './/td[contains(@class,"pr-8") and contains(normalize-space(.), "To do")]', quest_element))
         task["social"] = len(self.node.find_all(By.XPATH, './/button[@type = "button"]', social_element))
         if self.node.find_and_click(By.XPATH, './/td[contains(@class,"cursor-pointer") and normalize-space(.) = "Daily check"]', quest_element):
-            Utility.wait_time(5)
+            Utility.wait_time(2)
+            self.node.find_and_click(By.XPATH, '//button[contains(@class,"tracking-wide") and normalize-space(.) = "Check in"]')
+            Utility.wait_time(2)
             outpoint = self.node.get_text(By.XPATH, './/div[contains(@class,"text-3xl")]', main_element)
             task["point"] = outpoint
             task["plus"] = float(outpoint) - float(inpoint)
@@ -60,7 +62,8 @@ class Auto:
         else:
             return False
     def _run(self):
-        self.node.new_tab(f'{PROJECT_URL}', method="get")
+        self.node.go_to(f'{PROJECT_URL}', method="get")
+        self.node.find_and_click(By.XPATH, '//a[contains(@class,"cursor-pointer")]')
         if self.login():
             checkin = self.check_in()
             if not checkin:
